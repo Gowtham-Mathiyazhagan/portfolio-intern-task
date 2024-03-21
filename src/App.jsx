@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import fetchdata from "./Constants/script.js";
+import {fetchdata} from "./Constants/script.js";
 import Asidebar from "./Components/Asidebar.jsx";
+import Navbar from "./Components/Navbar.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -23,6 +24,9 @@ const App = () => {
           social_handles={userData.social_handles}
           email={userData.email}
         />
+        <div class="main-content">
+          <Navbar />
+        </div>
       </main>
     );
   }
