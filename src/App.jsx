@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import fetchdata from "./Constants/script.js";
+import Asidebar from "./Components/Asidebar.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -14,7 +15,17 @@ const App = () => {
     promise();
   }, []);
   console.log(userData);
-  return <></>;
+  if (userData) {
+    return (
+      <main>
+        <Asidebar
+          about={userData.about}
+          social_handles={userData.social_handles}
+          email={userData.email}
+        />
+      </main>
+    );
+  }
 };
 
 export default App;
