@@ -3,6 +3,7 @@ import "./App.css";
 import {fetchdata} from "./Constants/script.js";
 import Asidebar from "./Components/Asidebar.jsx";
 import Navbar from "./Components/Navbar.jsx";
+import About from "./Components/About.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -24,8 +25,13 @@ const App = () => {
           social_handles={userData.social_handles}
           email={userData.email}
         />
-        <div class="main-content">
+        <div className="main-content">
           <Navbar />
+          <About
+          about={userData.about}
+          testimonials={userData.testimonials}
+          services={userData.services}
+          />
         </div>
       </main>
     );
