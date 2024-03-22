@@ -20,7 +20,7 @@ const Asidebar = ({ about, social_handles, email }) => {
         <div className={active ? "sidebar-info-detail active" : "sidebar-info-detail" }>
           <ul className="personal-detail">
             <li>
-              <div className="icon">
+              <div className="icon-box">
                 <i className="bi bi-envelope"></i>
               </div>
               <div className="contact-info">
@@ -29,7 +29,7 @@ const Asidebar = ({ about, social_handles, email }) => {
               </div>
             </li>
             <li>
-              <div className="icon">
+              <div className="icon-box">
                 <i className="bi bi-phone"></i>
               </div>
               <div className="contact-info">
@@ -38,7 +38,7 @@ const Asidebar = ({ about, social_handles, email }) => {
               </div>
             </li>
             <li>
-              <div className="icon">
+              <div className="icon-box">
                 <i className="bi bi-calendar3"></i>
               </div>
               <div className="contact-info">
@@ -47,7 +47,7 @@ const Asidebar = ({ about, social_handles, email }) => {
               </div>
             </li>
             <li>
-              <div className="icon">
+              <div className="icon-box">
                 <i className="bi bi-geo-alt"></i>
               </div>
               <div className="contact-info">

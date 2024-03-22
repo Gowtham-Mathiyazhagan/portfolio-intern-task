@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import {fetchdata} from "./Constants/script.js";
+import { fetchdata } from "./Constants/script.js";
 import Asidebar from "./Components/Asidebar.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import About from "./Components/About.jsx";
+import Resume from "./Components/Resume.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -28,10 +29,11 @@ const App = () => {
         <div className="main-content">
           <Navbar />
           <About
-          about={userData.about}
-          testimonials={userData.testimonials}
-          services={userData.services}
+            about={userData.about}
+            testimonials={userData.testimonials}
+            services={userData.services}
           />
+          <Resume timeline={userData.timeline} skills={userData.skills} />
         </div>
       </main>
     );
