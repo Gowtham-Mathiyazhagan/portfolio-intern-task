@@ -11,6 +11,7 @@ Import all components style
 @import "./Style/about.css";
 @import "./Style/timeline.css";
 @import './Style/skill.css';
+@import './Style/portfolio.css';
 
 /* Removed default size */
 *,
