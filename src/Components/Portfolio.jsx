@@ -2,7 +2,7 @@ import React from "react";
 
 const Portfolio = ({ projects }) => {
   return (
-    <article className="portfolio active">
+    <article className="portfolio">
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>

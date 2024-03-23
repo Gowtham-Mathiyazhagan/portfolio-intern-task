@@ -7,6 +7,7 @@ import About from "./Components/About.jsx";
 import Timeline from "./Components/Timeline.jsx";
 import Skill from "./Components/Skill.jsx";
 import Portfolio from "./Components/Portfolio.jsx";
+import Contact from "./Components/Contact.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -38,6 +39,7 @@ const App = () => {
           <Timeline timeline={userData.timeline} />
           <Skill skills={userData.skills}/>
           <Portfolio projects={userData.projects} />
+          <Contact/>
         </div>
       </main>
     );

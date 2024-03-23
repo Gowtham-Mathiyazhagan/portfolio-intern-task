@@ -3,7 +3,7 @@ import icon from "../assets/icon-quote.svg";
 const About = ({ about, services, testimonials }) => {
   console.log(testimonials);
   return (
-    <article className="about  active">
+    <article className="about ">
       <header>
         <h2 className="h2 article-title">About me</h2>
       </header>
