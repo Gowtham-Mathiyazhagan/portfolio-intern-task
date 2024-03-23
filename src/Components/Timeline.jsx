@@ -2,7 +2,7 @@ import React from "react";
 
 const Timeline = ({ timeline }) => {
   return (
-    <article className="resume active">
+    <article className="resume">
       <header>
         <h2 className="h2 article-title">Timeline</h2>
       </header>

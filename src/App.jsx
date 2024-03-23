@@ -5,6 +5,7 @@ import Asidebar from "./Components/Asidebar.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import About from "./Components/About.jsx";
 import Timeline from "./Components/Timeline.jsx";
+import Skill from "./Components/Skill.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -34,6 +35,7 @@ const App = () => {
             services={userData.services}
           />
           <Timeline timeline={userData.timeline} />
+          <Skill skills={userData.skills}/>
         </div>
       </main>
     );
