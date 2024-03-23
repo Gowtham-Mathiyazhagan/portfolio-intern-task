@@ -1,0 +1,137 @@
+/*************
+Asidebar style
+**************/
+
+.sidebar {
+	margin-bottom: 15px;
+	overflow: hidden;
+	max-height: 118px;
+	transition: var(--transition-2);
+	/* border-radius: 20px; */
+	/* border: 1px solid var(--jet); */
+	/* padding: 15px; */
+  }
+  .sidebar.active {
+	max-height: 390px;
+  }
+  .sidebar-info {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+  }
+  
+  .sidebar-info figure img {
+	height: 90px;
+	width: 90px;
+	border-radius: 15px;
+  }
+  
+  .title-info h1 {
+	color: var(--white-2);
+	font-size: var(--fs-3);
+	font-weight: var(--fw-500);
+	letter-spacing: -0.25px;
+	margin-bottom: 10px;
+  }
+  .title-info p {
+	color: var(--white-1);
+	background: var(--onyx);
+	font-size: var(--fs-8);
+	font-weight: var(--fw-300);
+	width: max-content;
+	padding: 3px 12px;
+	border-radius: 8px;
+  }
+  .btn-detail {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	border-radius: 0 15px;
+	font-size: 13px;
+	color: var(--orange-yellow-crayola);
+	background: var(--border-gradient-onyx);
+	padding: 10px;
+	box-shadow: var(--shadow-2);
+	transition: var(--transition-1);
+	z-index: 10 !important;
+  }
+  
+  .btn-detail::before {
+	content: "";
+	position: absolute;
+	inset: 1px;
+	border-radius: inherit;
+	background: var(--bg-gradient-jet);
+	transition: var(--transition-1);
+	z-index: -1;
+  }
+  .btn-detail:hover {
+	background: var(--bg-gradient-yellow-1);
+  }
+  .btn-detail:hover::before {
+	background: var(--bg-gradient-yellow-2);
+  }
+  .btn-detail span {
+	display: none;
+  }
+  
+  .sidebar-info-detail {
+	opacity: 0;
+  }
+  
+  .sidebar-info-detail.active {
+	opacity: 1;
+  }
+  
+  .personal-detail {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+	margin: 12px 0;
+	padding: 12px 0;
+	border-top: 1px solid var(--jet);
+	border-bottom: 1px solid var(--jet);
+  }
+  .personal-detail li {
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+  }
+  
+  .contact-info {
+	max-width: calc(100% - 46px);
+	width: calc(100% - 46px);
+  }
+  .contact-info p {
+	color: var(--light-gray-70);
+	font-size: var(--fs-8);
+	text-transform: uppercase;
+	margin-bottom: 2px;
+  }
+  .contact-info a {
+	color: var(--white-2);
+	font-size: var(--fs-7);
+  }
+  
+  
+  .social-contact {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+  }
+  
+  .social-contact i {
+	color: var(--light-gray-70);
+	font-size: 18px;
+	cursor: pointer;
+  }
+  
+  .social-contact i:hover {
+	color: var(--light-gray);
+  }
