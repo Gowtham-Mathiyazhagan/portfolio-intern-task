@@ -4,7 +4,7 @@ import { fetchdata } from "./Constants/script.js";
 import Asidebar from "./Components/Asidebar.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import About from "./Components/About.jsx";
-import Resume from "./Components/Resume.jsx";
+import Timeline from "./Components/Timeline.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -33,7 +33,7 @@ const App = () => {
             testimonials={userData.testimonials}
             services={userData.services}
           />
-          <Resume timeline={userData.timeline} skills={userData.skills} />
+          <Timeline timeline={userData.timeline} />
         </div>
       </main>
     );
