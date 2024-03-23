@@ -1,8 +1,8 @@
 import React from "react";
 
-const Timeline = ({ timeline }) => {
+const Timeline = ({ timeline, active }) => {
   return (
-    <article className="resume">
+    <article className={active.value=="Timeline" ? "resume active" : "resume"}>
       <header>
         <h2 className="h2 article-title">Timeline</h2>
       </header>

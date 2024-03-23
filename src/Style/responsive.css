@@ -431,7 +431,8 @@
 
   .project-list,
   .blog-posts-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-content: center;
   }
 
   /**
@@ -544,7 +545,8 @@
 	 */
 
   .project-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 250px);
+    place-content: center;
   }
 
   /**

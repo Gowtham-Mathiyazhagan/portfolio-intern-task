@@ -11,4 +11,4 @@ export async function fetchdata() {
   }
 }
 
-export const navdata =["About","Resume","Portfolio","Blogs","Contact"]
+export const navdata =["About","Timeline","Skills","Portfolio","Contact"]

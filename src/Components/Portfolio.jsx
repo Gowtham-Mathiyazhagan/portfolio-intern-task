@@ -1,8 +1,8 @@
 import React from "react";
 
-const Portfolio = ({ projects }) => {
+const Portfolio = ({ projects, active }) => {
   return (
-    <article className="portfolio">
+    <article className={active.value=="Portfolio" ? "portfolio active" : "portfolio"}>
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>

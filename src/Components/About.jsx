@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import icon from "../assets/icon-quote.svg";
-const About = ({ about, services, testimonials }) => {
+const About = ({ about, services, testimonials, active }) => {
   console.log(testimonials);
   return (
-    <article className="about ">
+    <article className={active.value == "About" ? "about active" : "about"}>
       <header>
         <h2 className="h2 article-title">About me</h2>
       </header>

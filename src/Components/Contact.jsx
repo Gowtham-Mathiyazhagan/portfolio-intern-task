@@ -1,8 +1,8 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({active}) => {
   return (
-    <article className="contact active">
+    <article className={active.value== "Contact" ? "contact active" : "contact"}>
       <header>
         <h2 className="h2 article-title">Contact</h2>
       </header>

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Skill = ({ skills }) => {
+const Skill = ({ skills, active}) => {
   return (
     <>
-	<article className="resume ">
+	<article className={active.value == "Skills" ? "resume active" :"resume"}>
       <header>
         <h2 className="h2 article-title">Skills</h2>
       </header>
