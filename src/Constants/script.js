@@ -12,3 +12,5 @@ export async function fetchdata() {
 }
 
 export const navdata =["About","Timeline","Skills","Portfolio","Contact"]
+
+export const techStack = ["All"," Mern ","Reactjs "," Nextjs "," CSS"," TailwindCSS"]
