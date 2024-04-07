@@ -16,7 +16,7 @@ const Asidebar = ({ about, social_handles, email }) => {
 
             <p className="title">{about.title}</p>
           </div>
-          <button className="info_more-btn" onClick={()=>setActive(!active)}>
+          <button className="info_more-btn" onClick={() => setActive(!active)}>
             <span>Show Contacts</span>
             <i className="bi bi-chevron-down"></i>
           </button>
@@ -26,7 +26,7 @@ const Asidebar = ({ about, social_handles, email }) => {
           className={active ? "sidebar-info_more active" : "sidebar-info_more"}
         >
           <div className="separator"></div>
-          <ul className="personal-detail">
+          <ul className="contacts-list">
             <li className="contact-item">
               <div className="icon-box">
                 <i className="bi bi-envelope"></i>
@@ -34,7 +34,9 @@ const Asidebar = ({ about, social_handles, email }) => {
 
               <div className="contact-info">
                 <p className="contact-title">Email</p>
-                <a href={email} className="contact-link">{email} </a>
+                <a href={email} className="contact-link">
+                  {email}{" "}
+                </a>
               </div>
             </li>
 
@@ -45,7 +47,9 @@ const Asidebar = ({ about, social_handles, email }) => {
 
               <div className="contact-info">
                 <p className="contact-title">Phone</p>
-                <a href={about.phoneNumber} className="contact-link">{about.phoneNumber}</a>
+                <a href={about.phoneNumber} className="contact-link">
+                  {about.phoneNumber}
+                </a>
               </div>
             </li>
 
@@ -55,7 +59,7 @@ const Asidebar = ({ about, social_handles, email }) => {
               </div>
 
               <div className="contact-info">
-                <p className="contact-title" >Birthday</p>
+                <p className="contact-title">Birthday</p>
 
                 <a className="contact-link">June 23, 1982</a>
               </div>
@@ -79,7 +83,8 @@ const Asidebar = ({ about, social_handles, email }) => {
             {social_handles.map((data) => {
               return (
                 <li key={data.platform} className="social-link">
-                  <i className={`bi bi-${data.platform.toLowerCase()}`}></i>
+                  {/* <i className={`bi bi-${data.platform.toLowerCase()}`}></i> */}
+                  <img src={data.image.url} alt={data.platform} />
                 </li>
               );
             })}
