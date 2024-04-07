@@ -1,12 +1,12 @@
 .sidebar {
   margin-bottom: 15px;
-  max-height: 152px;
+  max-height: 132px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active {
-  max-height: 405px;
+  max-height: 425px;
 }
 
 .sidebar-info {
@@ -23,8 +23,8 @@
 }
 
 .avatar-box img {
-  height: 120px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   border-radius: 15px;
 }
 .info-content .name {
@@ -69,13 +69,11 @@
   z-index: -1;
 }
 
-.info_more-btn:hover,
-.info_more-btn:focus {
+.info_more-btn:hover {
   background: var(--bg-gradient-yellow-1);
 }
 
-.info_more-btn:hover::before,
-.info_more-btn:focus::before {
+.info_more-btn:hover::before {
   background: var(--bg-gradient-yellow-2);
 }
 
@@ -104,6 +102,7 @@
   min-width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -137,12 +136,15 @@
   padding-left: 7px;
 }
 
-.social-link i {
-  color: var(--light-gray-70);
-  font-size: 18px;
+.social-link img {
+  /* color: var(--light-gray-70);
+  font-size: 18px; */
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  /* padding-bottom: 10px; */
 }
 
-.social-link i:hover {
-  color: var(--light-gray);
+.social-link img:hover {
+  opacity: 0.5;
 }
-
